@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Junge", serif;
+  font-size: 10px;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --teal: #09a7a1;
+  --orange: #ff8000;
+  --raspbarry: #ff007a;
+  --neon-pink: #ff14bd;
+  --cream-brown: #31202b;
+  --cyan: #00ffff;
+  --midnight-voilet: #1f242d;
+  --groung-green: #07252d;
+}
+.container {
+  background: url(/Images/bacgroundImg.jpg) repeat-x;
+  background-size: contain;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.instruction {
+  position: absolute;
+  top: 100px;
+  left: 503px;
+
+  font-size: 50px;
+  font-weight: bolder;
+}
+#scoreCont{
+  font-size: 25px;
+  color: #bcbe20;
+  font-weight: bold;
+  position: absolute;
+  right: 45px;
+  top: 31px;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 10px;
+}
+
+.gameOver{
+  position: relative;
+  top:63px;
+  font-size: 53px;
+  text-align: center; 
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.characters {
+  position: relative;
+  bottom: -310px;
+  /* background-color: #00ffff; */
+  height: 400px;
+}
+.dino {
+  position: absolute;
+  bottom: 0;
+
+  background: url(/Images/dino.png) no-repeat;
+  background-size: 250px;
+  height: 130px;
+  width: 250px;
+
+  /* animation: dinoJump 1.3s ; */
+}
+.obstacle { 
+  position: absolute;
+  bottom: 0;
+  left: 700px;
+  
+  background: url(/Images/dragon.png) no-repeat;
+  background-size: 250px;
+  height: 170px;
+  width: 250px;
+  
+  /* animation: dragonMove 3s infinite linear; */
+}
+
+.animateDino{
+  animation: dinoJump 0.7s infinite linear;
+}
+.obstacleAni{
+  animation: dragonMove 5s infinite linear;
+}

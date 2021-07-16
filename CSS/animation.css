@@ -1,0 +1,23 @@
+@keyframes dinoJump {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes dragonMove {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -50vw;
+    }
+}
+@keyframes moveRight {
+    
+}
